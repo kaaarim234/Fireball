@@ -7,9 +7,9 @@ public class FlashcardCategory implements Serializable {
         this.categoryName = categoryName;
     }
 
-    public String getCategoryName() {
-        return categoryName;
-    }
+    //public String getCategoryName() {
+      //  return categoryName;
+    //}
 
     @Override
     public String toString() {

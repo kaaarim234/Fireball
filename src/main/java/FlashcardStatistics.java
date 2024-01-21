@@ -46,18 +46,6 @@ public class FlashcardStatistics {
         mcIncorrectAnswers++;
     }
 
-    public int getMCCorrectAnswers() {
-        return mcCorrectAnswers;
-    }
 
-    public int getMCIncorrectAnswers() {
-        return mcIncorrectAnswers;
-    }
 
-    public double getAccuracy() {
-        if (totalQuestions == 0) {
-            return 0.0;
-        }
-        return (double) correctAnswers / totalQuestions * 100;
-    }
 }

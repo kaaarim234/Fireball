@@ -11,7 +11,9 @@ public class Flashcard implements Serializable {
         this.category = category;
     }
 
-    public Flashcard(String part, String part1) {
+    public Flashcard(String question, String answer) {
+        this.question = question;
+        this.answer = answer;
     }
     @Override
     public String toString() {
@@ -39,8 +41,5 @@ public class Flashcard implements Serializable {
         return category;
     }
 
-    public void setCategory(FlashcardCategory category) {
 
-        this.category = category;
-    }
 }

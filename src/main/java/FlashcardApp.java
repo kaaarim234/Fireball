@@ -77,13 +77,10 @@ public class FlashcardApp {
 
         System.out.print("Geben Sie die Antwort ein: ");
         String answer = scanner.nextLine();
-        System.out.println("Geben Sie eine Kategorie ein");
-        String category1 = scanner.nextLine();
 
         // Beispiel: Hier erstellen oder initialisieren Sie Ihre FlashcardCategory-Instanz
-        FlashcardCategory category = new FlashcardCategory(category1);
 
-        deck.addCard(new Flashcard(question, answer, category));
+        deck.addCard(new Flashcard(question, answer));
         System.out.println("Die Karteikarte wurde hinzugefügt.");
     }
 
@@ -119,14 +116,7 @@ public class FlashcardApp {
 
 
 
-    private static boolean containsMultipleChoiceFlashcards(List<Flashcard> cards) {
-        for (Flashcard card : cards) {
-            if (card instanceof MultipleChoiceFlashcard) {
-                return true;
-            }
-        }
-        return false;
-    }
+
 
     private static void displayStatistics() {
         if (flashcardLearning != null) {
